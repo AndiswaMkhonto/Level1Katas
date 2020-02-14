@@ -72,7 +72,7 @@ public class Hello {
 
         for (int i=0; i<2*length+1; ++i)
         {
-            int k=Math.min(i, 2*length+-i);
+            int k=Math.min(i, 2*length-i);
             for (int j=0; j<=k; ++j)
             {
                 System.out.print(j+1 + " ");
