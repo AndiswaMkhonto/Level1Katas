@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class Hello {
     private String name;
 
-    public Hello() {
-
-    }
+//    public Hello() {
+//
+//    }
 
     public String getName() {
         return name;
