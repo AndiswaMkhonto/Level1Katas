@@ -59,27 +59,22 @@ public class Hello {
 
     }
     //A function to draw an isosceles triangle
-    public void isoscelesTriangle(int length) {
-//        for (int i = 1; i <= length; i++) {
-//            for (int j = length-1; j >= i; j--) {
-//                System.out.print(" ");
-//            }
-//            for (int p = 1; p <= i; p++) {
-//                System.out.print("#  ");
-//            }
-//            System.out.println();
+    public void isoscelesTriangle(int size) {
+        System.out.println("Enter an integer to draw an isosceles triangle");
+        Scanner in = new Scanner(System.in);
+        size = in.nextInt();
 
-
-        for (int i=0; i<2*length+1; ++i)
-        {
-            int k=Math.min(i, 2*length-i);
-            for (int j=0; j<=k; ++j)
-            {
-                System.out.print(j+1 + " ");
+        for(int row=1; row<=size;row++){
+            //for spacing on both sides of columns
+            for(int colSpace=size-row;colSpace>=1;colSpace--){
+                System.out.print(" ");
+            }
+            for(int colHashes=1;colHashes<=(row*2)-1;colHashes++){
+                System.out.print("#");
             }
             System.out.println();
         }
-
+//
     }
     public void findLongestString(){
         String[] array=new String[]{"the","quick","brown","fox","ate","my","andiswar","chickens"};

@@ -12,7 +12,7 @@ public class Main {
         System.out.println("..............................................");
         h.rightAngledTriangle();
         System.out.println("..............................................");
-        h.isoscelesTriangle(4);
+        h.isoscelesTriangle(5);
         System.out.println("................................................");
         h.findLongestString();
         System.out.println(".................................................");
