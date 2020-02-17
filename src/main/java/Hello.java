@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -85,7 +86,6 @@ public class Hello {
                     lengthElement=array[i].length();
                 }
         }
-
         for(int i=0;i<array.length;i++) {
             if(lengthElement == array[i].length())
                 System.out.println(array[i]);
@@ -93,15 +93,15 @@ public class Hello {
     }
 
     public void combineStrings(){
-
-        int[] array1 = {1, 2, 3};
-        int[] array2 = {4, 5, 6};
-        int aLen = array1.length;
-        int bLen = array2.length;
-        int[] result = new int[aLen + bLen];
-
-        System.arraycopy(array1, 0, result, 0, aLen);
-        System.arraycopy(array2, 0, result, aLen, bLen);
-        System.out.println(Arrays.toString(result));
+        int[] arr1={11,22,33};
+        int[] arr2={1,2,3};
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i=0; i<arr1.length;i++){
+            list.add(arr1[i]);
+            for(int j=i; j<=i; j++){
+                list.add(arr2[j]);
+            }
+        }
+        System.out.println(list);
     }
 }
