@@ -77,16 +77,19 @@ public class Hello {
 //
     }
     public void findLongestString(){
-        String[] array=new String[]{"the","quick","brown","fox","ate","my","andiswar","chickens"};
-        int index=0;
-        int lengthElement = array[1].length();
-        for(int i=1;i<array.length;i++) {
-            if(array[i].length() >= lengthElement) {
-                index=i;
-                lengthElement=array[i].length();
-            }
+        String[] array=new String[]{"once", "upon", "a", "time"};
+        int lengthElement = array[0].length();
+        for(int i=0;i<array.length;i++) {
+                if(array[i].length() >= lengthElement) {
+
+                    lengthElement=array[i].length();
+                }
         }
-        System.out.println(array[index]);
+
+        for(int i=0;i<array.length;i++) {
+            if(lengthElement == array[i].length())
+                System.out.println(array[i]);
+        }
     }
 
     public void combineStrings(){
